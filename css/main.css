@@ -10,12 +10,89 @@ body {
 	height: 500px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-logo {
+	background-image: url('http://fc01.deviantart.net/fs71/i/2013/090/9/b/ryu_logo_by_urbinator17-d6006lf.png');
+	background-size: contain;
+}
+
+.jquery-logo {
+	background-image: url('http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif');
+	background-size: contain;
+}
+
+.ryu-logo, .jquery-logo {
+	display: none;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	float: right;
+}
+
+.ryu-logo {
+	right: 232px;
+	top: 100px;
+}
+
+.brought {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	position: relative;
+	float: right;
+	right: 200px;
+	top: 200px;
+}
+
+.jquery-logo {
+	right: 232px;
+	top: 50px;
+}
+
+.instructions {
+	position: relative;
+	float: right;
+	top: 300px;
+	right: 320px;
+	padding: 1em;
+	border-radius: 5px;
+}
+
+.instructions:hover {
+	cursor: pointer;
+	box-shadow: 0 0 2px black;
+}
+
+.commands {
+	float: right;
+	position: relative;
+	display: none;
+	right: 50px;
+	top: 100px;
+	color: white;
+	padding: .5em;
+	background-color: #e20404;
+	display: none;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+.commands h1 {
+	font-size: 1.5em;
+	font-family: cursive;
+	margin-bottom: .2em;
+	margin-top: .2em;
+}
+
+.commands p {
+	font-family: arial;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-logo, .jquery-logo, .instructions, .brought {
 	display: none;
 }
 
@@ -31,7 +108,11 @@ body {
 	background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif')
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-logo, .jquery-logo {
 	background-repeat: no-repeat;
 }
 
@@ -43,9 +124,9 @@ body {
 	float: left;
 	position: relative;
 	top: -325px;
-	left: -212px;
+	left: 425px;
 }
 
-* {
-	outline: red 1px solid;
-}
+/** {
+	outline: 1px solid red;
+}*/
